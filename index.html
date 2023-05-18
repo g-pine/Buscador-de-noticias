@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Api de noticias</title>
+</head>
+<body>
+    <h1>Noticias</h1>
+    <div class="container">
+        <header>
+            <nav>
+                <span class="cat" onclick="buscar('tecnología')">Tecnología</span>
+                <span class="cat" onclick="buscar('programación')">Programación</span>
+                <span class="cat" onclick="buscar('Economía')">Economía</span>
+                <span class="cat" onclick="buscar('Educación')">Educación</span>
+                <span class="cat" onclick="buscar('Criptomonedas')">Criptomonedas</span>
+            </nav>
+            <div class="busqueda">
+                <input type="text" placeholder="¿Qué deseas buscar?" id="busqueda">
+                <button onclick="buscarTema()">Buscar</button>
+            </div>
+        </header>
+        <div class="container-noticias">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
